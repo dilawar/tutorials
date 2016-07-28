@@ -1,0 +1,667 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Introduction to statistical concepts
+\end_layout
+
+\begin_layout Author
+Oliver Muthmann
+\end_layout
+
+\begin_layout Date
+07/27/2016
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Paragraph*
+Problem: 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+direct If you have a model, you can generate data .
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+inverse If you have data, it is difficult to find the corresponding model.
+\end_layout
+
+\begin_layout Standard
+\align center
+Model 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+Data
+\end_layout
+
+\begin_layout Standard
+\align center
+but
+\end_layout
+
+\begin_layout Standard
+\align center
+Data 
+\begin_inset Formula $\nRightarrow$
+\end_inset
+
+Model.
+\end_layout
+
+\begin_layout Standard
+'Solution': go back and forth between direct and inverse problem.
+\end_layout
+
+\begin_layout Subsection
+Model classification
+\end_layout
+
+\begin_layout Itemize
+continous, discrete
+\end_layout
+
+\begin_layout Itemize
+deterministic, stochastic
+\end_layout
+
+\begin_layout Itemize
+linear, nonlinear
+\end_layout
+
+\begin_layout Subsection
+General remarks
+\end_layout
+
+\begin_layout Itemize
+need to understand few things properly
+\end_layout
+
+\begin_layout Itemize
+need to recognize a lot
+\end_layout
+
+\begin_layout Itemize
+need to be able to find the rest in literature
+\end_layout
+
+\begin_layout Section
+Distributions
+\end_layout
+
+\begin_layout Subsection
+Random variables
+\end_layout
+
+\begin_layout Standard
+Random variable 
+\begin_inset Formula $X$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+probability density 
+\begin_inset Formula $p_{X}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+realization 
+\begin_inset Formula $x$
+\end_inset
+
+ in 
+\begin_inset Formula $(x,x+dx)$
+\end_inset
+
+ has probability 
+\begin_inset Formula $p_{X}(x)dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p_{X}(x)\geq0,\quad\int p_{X}(x)dx=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Moments
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu_{k}=\langle x{}^{k}\rangle=\int x^{k}p(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Mean 
+\begin_inset Formula $\mu_{1}=\bar{x}=\mu=\langle x\rangle$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Variance 
+\begin_inset Formula $\sigma^{2}=\langle(x-\bar{x})^{2}\rangle=\mu_{2}-\mu_{1}^{2}\qquad$
+\end_inset
+
+ standard deviation 
+\begin_inset Formula $\sigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Skewness 
+\begin_inset Formula $\kappa=\langle(x-\bar{x})^{3}\rangle\qquad$
+\end_inset
+
+measure for asymmetry
+\end_layout
+
+\begin_layout Description
+Kurtosis 
+\begin_inset Formula $\gamma=\langle(x-\bar{x})^{4}\rangle/\sigma^{4}-3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Examples of distributions
+\end_layout
+
+\begin_layout Description
+Gaussian
+\begin_inset space ~
+\end_inset
+
+(or
+\begin_inset space ~
+\end_inset
+
+normal)
+\begin_inset space ~
+\end_inset
+
+distribution
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $N(\mu,\sigma^{2})$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+p_{G}(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\bar{x})^{2}}{2\sigma^{2}}}
+\]
+
+\end_inset
+
+Standard normal distribution: 
+\begin_inset Formula $N(0,1)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+68% of its probability mass in 
+\begin_inset Formula $[-\sigma,\sigma]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+95% of its probability mass in 
+\begin_inset Formula $[-2\sigma,2\sigma]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Moments:
+\begin_inset Formula $\langle x{}^{k}\rangle=\begin{cases}
+{0\atop 1\cdot3\ldots(k-1)} & {k\text{ even}\atop k\text{ odd}}\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+Central limit theorem
+\emph default
+: Sum of independent random variables with finite moments converges to a
+ gaussian distribution.
+\end_layout
+
+\begin_layout Description
+Uniform
+\begin_inset space ~
+\end_inset
+
+distribution
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $U(a,b)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+p(x)=\begin{cases}
+{1/(b-a)\atop 0} & {a\leq x\leq b\atop \text{else.}}\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Exponential
+\begin_inset space ~
+\end_inset
+
+distribution 
+\begin_inset Formula $Exp(\tau)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+p(x)=\frac{1}{\tau}e^{-x/\tau}
+\]
+
+\end_inset
+
+ Mean and standard deviation:
+\begin_inset Formula $\mu=\sigma=\tau$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Can use uniform numbers to generate 
+\begin_inset Formula 
+\[
+x\sim U(0,1)\quad\Longrightarrow\quad-\log(x)\sim Exp(1)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\chi_{r}^{2}$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+distribution
+\begin_inset space ~
+\end_inset
+
+with
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $r$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+degrees
+\begin_inset space ~
+\end_inset
+
+of
+\begin_inset space ~
+\end_inset
+
+freedom: 
+\begin_inset Formula 
+\[
+\chi_{r^{2}}(x)=\sum_{i=1}^{r}(N(0,1))^{2}
+\]
+
+\end_inset
+
+ Sum of 
+\begin_inset Formula $r$
+\end_inset
+
+ independent, standard normal distributed random variables.
+ Can turn this around to reject the hypothesis that variables were independent.
+\begin_inset Newline newline
+\end_inset
+
+Mean 
+\begin_inset Formula $\mu=r$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Variance 
+\begin_inset Formula $\sigma^{2}=2r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $t$
+\end_inset
+
+-distribution: 
+\begin_inset Formula 
+\[
+t(r,x)=\frac{N(0,1)}{\sqrt{\chi_{r}^{2}/r}}
+\]
+
+\end_inset
+
+ To test whether the mean of a normal distribution is different from zero.
+ The test is done by summing up squared differences from zero.
+ That explains the 
+\begin_inset Formula $\chi_{r}^{2}$
+\end_inset
+
+-distribution.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $F$
+\end_inset
+
+-distribution: 
+\begin_inset Formula 
+\[
+F(r_{1},r_{2},x)=\frac{\chi_{r_{1}}^{2}/r_{1}}{\chi_{r_{2}}^{2}/r_{2}}
+\]
+
+\end_inset
+
+ To test the variances of two normal distributions.
+ For that, divide the variances and see whether it is roughly one.
+ To obtain variances, we need to sum up squared differences from the mean.
+ Subtract the mean, then we again obtain 
+\begin_inset Formula $\chi_{r}^{2}$
+\end_inset
+
+-distributed numbers.
+\end_layout
+
+\begin_layout Description
+Cauchy
+\begin_inset space ~
+\end_inset
+
+distribution
+\begin_inset Formula $\text{Cauchy}(x,\mu,\gamma)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\text{t(1,x)=Cauchy (x,0,1)=\frac{N(0,1)}{N(0,1)}}
+\]
+
+\end_inset
+
+ Moments do not exist.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\mu$
+\end_inset
+
+ is a location parameter, not the mean.
+\begin_inset Newline newline
+\end_inset
+
+Also known as Breit-Wigner or Lorenz distribution.
+\end_layout
+
+\begin_layout Description
+Binomial
+\begin_inset space ~
+\end_inset
+
+distribution: 
+\begin_inset Formula 
+\[
+B(n,p,k)=\dbinom{n}{k}p^{k}(1-p)^{n-k},\qquad k\in\{0,1,...,n\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Poisson
+\begin_inset space ~
+\end_inset
+
+distribution: 
+\begin_inset Formula 
+\[
+P(k,\lambda)=\frac{e^{-\lambda}\lambda^{k}}{k!}
+\]
+
+\end_inset
+
+ Limiting case of the Binomial distribution, with 
+\begin_inset Formula $\lim_{n\rightarrow\infty}np=\lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Estimators
+\end_layout
+
+\begin_layout Subsubsection*
+Mean of a Gaussian random variable
+\end_layout
+
+\begin_layout Standard
+Have 
+\begin_inset Formula $N$
+\end_inset
+
+ realizations 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ from 
+\begin_inset Formula $N(\mu,\sigma^{2})$
+\end_inset
+
+.
+ The 
+\emph on
+estimator
+\emph default
+
+\begin_inset Formula 
+\[
+\hat{\mu}=\frac{1}{N}\sum_{i-1}^{N}x_{i}
+\]
+
+\end_inset
+
+ is a Gaussian distributed random variable with
+\begin_inset Formula 
+\[
+\langle\hat{\mu}\rangle=\mu
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{Var(\hat{\mu})=}\langle(\hat{\mu}-\langle\hat{\mu}\rangle)^{2}\rangle=\frac{1}{N}\sigma^{2}
+\]
+
+\end_inset
+
+
+\emph on
+ Confidence interval
+\emph default
+: with a probability of 95 %, the true value of 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is in the interval
+\begin_inset Formula 
+\[
+\left[\hat{\mu}-1.96\sqrt{\frac{1}{N}\sigma^{2}},\hat{\mu}+1.96\sqrt{\frac{1}{N}\sigma^{2}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Variance of a Gaussian random variable
+\end_layout
+
+\begin_layout Standard
+The estimator
+\begin_inset Formula 
+\[
+\hat{\sigma^{2}}=\frac{1}{N-1}\sum_{i=1}^{N}(x_{i}-\hat{\mu})^{2}
+\]
+
+\end_inset
+
+ is a 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
