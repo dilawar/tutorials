@@ -1,0 +1,17 @@
+---
+title: Average and Spread
+author: Dilawar Singh
+date : \today 
+---
+
+# Average or typical
+
+You want to know what is the "average" or "typical" in my sample
+
+> - Mean - *add them up and divide by sample size*
+> - Median  - *sort them in ascending order, get the middle value*
+> - Mode  - *Most frequent value*
+
+# Average or typical : Example
+
+I throw a two dice 1000 times
